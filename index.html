@@ -1,389 +1,448 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Francis Nkrumah</title>
-    <meta name="author" content="Francis Nkrumah">
-    <meta name="description" content="Francis Nkrumah (PhD), Senior Lecturer and climate scientist, Department of Physics, University of Cape Coast, Ghana.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francis Nkrumah | Climate scientist, University of Cape Coast</title>
+  <meta name="author" content="Francis Nkrumah">
+  <meta name="description" content="Francis Nkrumah (PhD), Senior Lecturer and climate scientist at the University of Cape Coast, Ghana. Research on West African rainfall, monsoon dynamics, extremes and climate intervention.">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f4f6f3;
+      --ink: #1c2534;
+      --muted: #5b6676;
+      --rule: #d5dbd6;
+      --sea: #0e6a73;        /* Gulf of Guinea */
+      --dust: #a8792a;       /* Harmattan */
+      --bar: #0e6a73;
+      --hl: #e6efed;
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #121a24; --ink: #e5e9ee; --muted: #9aa6b4; --rule: #2b3646;
+        --sea: #5fc0c7; --dust: #d9ad5c; --bar: #5fc0c7; --hl: #1a2633;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *{animation:none!important;transition:none!important} }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: var(--serif); font-size: 1.125rem; line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sea); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--dust); outline-offset: 3px; border-radius: 2px; }
+    .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.4rem; }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+    /* ---------- Hero ---------- */
+    header { padding: 4.5rem 0 1.5rem; }
+    .top { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
+    h1 {
+      font-weight: 500; font-size: clamp(2.6rem, 7vw, 4rem); line-height: 1.02;
+      letter-spacing: -0.02em; margin: 0 0 .9rem;
+    }
+    .role { font-family: var(--sans); font-size: 1rem; color: var(--muted); margin: 0; line-height: 1.5; }
+    .photo {
+      width: 9.5rem; height: 9.5rem; border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--rule);
+      background: var(--hl);
+    }
+    .rain { margin: 2.6rem 0 .4rem; }
+    .rain svg { width: 100%; height: auto; display: block; overflow: visible; }
+    .rain .bars rect { fill: var(--bar); opacity: .88; transform-origin: bottom; transform-box: fill-box; animation: grow .9s cubic-bezier(.2,.7,.2,1) both; }
+    .rain .bars rect:nth-of-type(odd) { }
+    .rain text { font-family: var(--sans); font-size: 11px; fill: var(--muted); }
+    .rain .base { stroke: var(--rule); }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    .caption { font-family: var(--sans); font-size: .82rem; color: var(--muted); margin: .3rem 0 0; }
 
-          <!-- ===================== Header / Bio ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">Francis Nkrumah (PhD)</p>
-                <p>
-                  I am a climate scientist and Senior Lecturer in the Department of Physics, University of Cape Coast (UCC), Ghana,
-                  where I coordinate the Meteorology and Atmospheric Physics Programme. I serve as a Review Editor for the
-                  Working Group I contribution to the IPCC Seventh Assessment Report (AR7), and was a Contributing Author to
-                  the IPCC Sixth Assessment Report (AR6).
-                </p>
-                <p>
-                  My work focuses on the West African water cycle and climate: rainfall regimes and extremes, mesoscale convective
-                  systems, West African Monsoon dynamics under climate change, and the regional impacts of climate intervention.
-                  I am part of the EW4Energy project on storm and lightning early warning in Ghana, host a GPS receiver station at UCC,
-                  and enjoy teaching and mentoring the next generation of African atmospheric scientists.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:francis.nkrumah@ucc.edu.gh">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Curriculum_Vitae_Francis_N.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/FrancisNkrumah-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=s_o1fYoAAAAJ&amp;hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://orcid.org/0000-0002-4723-8062">ORCID</a> &nbsp;/&nbsp;
-                  <a href="https://x.com/NkrumahFra">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/francis-nkrumah-phd-0457947b/">LinkedIn</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/FrancisN.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="Profile photo of Francis Nkrumah" src="images/FrancisN.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+    .links { font-family: var(--sans); font-size: .95rem; display: flex; flex-wrap: wrap; gap: .4rem 1.3rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+    .links a { color: var(--ink); text-decoration-color: var(--rule); }
+    .links a:hover { color: var(--sea); text-decoration-color: currentColor; }
 
-          <!-- ===================== News ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:16px 16px 0 16px;width:100%;vertical-align:middle"><h2>Recent Highlights</h2></td></tr>
-          </tbody></table>
+    /* ---------- Sections ---------- */
+    section { padding: 2.6rem 0 .6rem; border-top: 1px solid var(--rule); margin-top: 2.2rem; }
+    h2 { font-weight: 500; font-size: 1.75rem; letter-spacing: -0.01em; margin: 0 0 1.1rem; }
+    p { margin: 0 0 1rem; }
+    .lede { font-size: 1.28rem; line-height: 1.55; }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:0 16px 8px 16px;width:100%;vertical-align:middle">
-              <ul>
-                <li><strong>Aug 2026:</strong> New paper in <em>Atmospheric Science Letters</em> on an index for the South Indian Ocean High-Pressure system.</li>
-                <li><strong>Jun 2026:</strong> Attended the Gordon Research Conference on Climate Engineering, Newry, Maine, USA.</li>
-                <li><strong>2026:</strong> ACIRH workshop and stakeholder dialogue on climate intervention, Accra, Ghana.</li>
-                <li><strong>2025:</strong> Appointed Review Editor, IPCC AR7 Working Group I.</li>
-                <li><strong>2025:</strong> EW4Energy project launched &mdash; deploying Ghana&rsquo;s first ground-based lightning detection network.</li>
-                <li><strong>May 2025:</strong> Degrees Global Forum on Climate Intervention, Cape Town, South Africa.</li>
-              </ul>
-            </td></tr>
-          </tbody></table>
+    /* Highlights: a dated timeline */
+    .tl { list-style: none; margin: 0; padding: 0; }
+    .tl li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding: .55rem 0; border-bottom: 1px dashed var(--rule); }
+    .tl li:last-child { border-bottom: 0; }
+    .tl time { font-family: var(--sans); font-size: .9rem; color: var(--dust); font-weight: 600; padding-top: .18rem; }
 
-          <!-- ===================== Research ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:16px 16px 0 16px;width:100%;vertical-align:middle"><h2>Research</h2></td></tr>
-          </tbody></table>
+    /* Projects */
+    .proj { margin: 0 0 1.4rem; }
+    .proj h3 { font-size: 1.2rem; font-weight: 600; margin: 0; }
+    .proj .when { font-family: var(--sans); font-size: .88rem; color: var(--dust); font-weight: 600; margin-left: .4rem; }
+    .proj p { margin: .25rem 0 0; color: var(--ink); }
+    .proj.lead { background: var(--hl); padding: 1.1rem 1.25rem; border-left: 3px solid var(--sea); border-radius: 0 6px 6px 0; }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:0 16px 16px 16px;width:100%;vertical-align:middle">
-              <p>
-                My research interests encompass hydro-climatology and the West African water cycle, regional climate modelling,
-                mesoscale convective systems, and the dynamics of the West African Monsoon under climate change. I focus on
-                hydro-meteorological extremes such as droughts, dry and wet spells, and high-intensity precipitation, and on
-                combining ground-based and space-based observations (rain gauges, satellites, GNSS, lightning sensors and reanalyses)
-                with climate models. I am also interested in climate intervention, including solar radiation modification and
-                carbon dioxide removal, with a particular emphasis on their regional implications in West Africa.
-              </p>
-            </td></tr>
-          </tbody></table>
+    /* Publications */
+    .pubhead { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .count { font-family: var(--sans); font-size: .92rem; color: var(--muted); }
+    .toggle { font-family: var(--sans); font-size: .9rem; display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; padding: 3px; margin: .2rem 0 1.4rem; }
+    .toggle button { font: inherit; border: 0; background: transparent; color: var(--muted); padding: .35rem .9rem; border-radius: 999px; cursor: pointer; }
+    .toggle button[aria-pressed="true"] { background: var(--sea); color: var(--paper); }
+    .yr { display: grid; grid-template-columns: 4.2rem 1fr; gap: 1rem; }
+    .yr h3 { font-family: var(--sans); font-size: .95rem; font-weight: 600; color: var(--dust); margin: .55rem 0 0; position: sticky; top: 1rem; align-self: start; }
+    .yr ul { list-style: none; margin: 0; padding: 0; }
+    .pub { padding: .55rem 0 1.05rem; }
+    .pub .pt { display: block; color: var(--ink); text-decoration: none; font-weight: 500; font-size: 1.12rem; line-height: 1.4; }
+    .pub .pt:hover { color: var(--sea); text-decoration: underline; }
+    .pub .au { display: block; font-family: var(--sans); font-size: .9rem; color: var(--muted); margin-top: .25rem; line-height: 1.45; }
+    .pub .au .me { color: var(--ink); font-weight: 600; }
+    .pub .jr { display: block; font-size: 1rem; color: var(--muted); }
+    .onlyfirst .pub:not(.first) { display: none; }
+    .onlyfirst .yr:not(:has(.first)) { display: none; }
+    .note { font-family: var(--sans); font-size: .9rem; color: var(--muted); }
 
-          <!-- ===================== Projects ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:16px 16px 0 16px;width:100%;vertical-align:middle"><h2>Projects &amp; Roles</h2></td></tr>
-          </tbody></table>
+    .cols { columns: 2 14rem; column-gap: 2rem; padding: 0; margin: 0; list-style: none; }
+    .cols li { break-inside: avoid; padding: .2rem 0; }
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:0 16px 8px 16px;width:100%;vertical-align:middle">
-              <ul>
-                <li><strong>EW4Energy</strong> (2025&ndash;present) &mdash; Developing capacity for storm and lightning early warning for the energy sector in Ghana.
-                    Africa&ndash;UK Physics Partnership (STFC / Institute of Physics); University of Leeds, UKCEH, KNUST, UCC and the Ghana Meteorological Agency.</li>
-                <li><strong>Degrees Modelling Fund</strong> (2022&ndash;present), The Degrees Initiative &mdash; regional climate impacts of stratospheric aerosol injection over West Africa.</li>
-                <li><strong>CORDEX-Africa</strong> (2018&ndash;present) &mdash; Coordinated Regional Climate Downscaling Experiment.</li>
-                <li><strong>GPS receiver station</strong>, Department of Physics, UCC &mdash; host.</li>
-                <li><strong>IPCC</strong> &mdash; Review Editor, AR7 Working Group I (2025&ndash;present); Contributing Author, AR6 Working Group I.</li>
-                <li><strong>African Climate Intervention Research Hub (ACIRH)</strong> &mdash; member.</li>
-              </ul>
-            </td></tr>
-          </tbody></table>
+    footer { border-top: 1px solid var(--rule); margin: 3rem 0 0; padding: 1.6rem 0 3rem; font-family: var(--sans); font-size: .85rem; color: var(--muted); }
 
-          <!-- ===================== Publications ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:16px 16px 0 16px;width:100%;vertical-align:middle"><h2>Publications</h2></td></tr>
-          </tbody></table>
+    @media (max-width: 600px) {
+      header { padding-top: 2.5rem; }
+      .top { grid-template-columns: 1fr; }
+      .photo { order: -1; width: 7rem; height: 7rem; }
+      .tl li, .yr { grid-template-columns: 1fr; gap: .1rem; }
+      .yr h3 { position: static; }
+    }
+    @media print { .rain, .toggle { display: none; } body { background: #fff; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quagraine, K. A., Quagraine, K. T., <strong>Nkrumah, F.</strong>, Tilmes, S., Hewitson, B., Tadross, M., Klutse, N. A. B. <strong>(2026)</strong>.
-        <span class="papertitle">An Index to Characterize the South Indian Ocean High-Pressure System and Its Variability</span>.
-        <em>Atmospheric Science Letters</em>.
-        <br>
-        <a href="https://doi.org/10.1002/asl2.70056">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Owusu, Y., Angnuureng, B. D., Kpogo-Nuwoklo, K. A., Twum, A., <strong>Nkrumah, F.</strong>, Nwanosike, B. <strong>(2026)</strong>.
-        <span class="papertitle">Comprehensive analysis of extreme wave events along the West African Coast: a study using WAVERYS data and the peak-over-threshold method</span>.
-        <em>African Geographical Review</em>.
-        <br>
-        <a href="https://doi.org/10.1080/19376812.2025.2611302">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Dommo, A., <strong>Nkrumah, F.</strong>, Quagraine, K. A., Klutse, N. A. B., Quenum, G. M. L. D., Koffi, H. A. <strong>(2025)</strong>.
-        <span class="papertitle">Assessing the Response of Surface Cloud Radiative Effects to Stratospheric Aerosol Injections over West and Central Africa</span>.
-        <em>Journal of Geophysical Research: Atmospheres</em>.
-        <br>
-        <a href="https://doi.org/10.1029/2025JD043576">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quagraine, K. A., Tye, M. R., Quagraine, K. T., Tilmes, S., Simpson, I. R., <strong>Nkrumah, F.</strong>, Egbebiyi, T. S., Odoulami, R. C., Klutse, N. A. B. <strong>(2025)</strong>.
-        <span class="papertitle">Assessing the impact of stratospheric aerosol injection on precipitation extremes in Africa using the ARISE-SAI-1.5 dataset</span>.
-        <em>Environmental Research: Climate, 4(3), 035006</em>.
-        <br>
-        <a href="https://doi.org/10.1088/2752-5295/adee3c">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        <strong>Nkrumah, F.</strong>, Quagraine, K. A., Quenum, G. M. L. D., Visioni, D., Koffi, H. A., Klutse, N. A. B. <strong>(2025)</strong>.
-        <span class="papertitle">Assessing Regional Climate Trends in West Africa Under Geoengineering: A Multi-model Comparison of UKESM1 and CESM2</span>.
-        <em>Journal of Geophysical Research: Atmospheres, 130(13), e2024JD043117</em>.
-        <br>
-        <a href="https://doi.org/10.1029/2024JD043117">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quagraine, K. T., Quagraine, K. A., <strong>Nkrumah, F.</strong>, Egbebiyi, T. S., Klutse, N. A. B. <strong>(2025)</strong>.
-        <span class="papertitle">Assessing the Impact of the South Indian Ocean High-Pressure System Using a Novel Index</span>.
-        <em>International Journal of Climatology, 45(12), e70031</em>.
-        <br>
-        <a href="https://doi.org/10.1002/joc.70031">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        <strong>Nkrumah, F.</strong>, Quenum, G. M. L. D., Quagraine, K. A., Tilmes, S., Klutse, N. A. B., Dommo, A., Koffi, H. A., Essien, P. &amp; Bediako, R. <strong>(2025)</strong>.
-        <span class="papertitle">Climate Response to Stratospheric Aerosol Injection During the Harmattan Season in West Africa</span>.
-        <em>Environmental Research: Climate, 4(1), 015005</em>.
-        <br>
-        <a href="https://doi.org/10.1088/2752-5295/adaa0c">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quagraine, K. A., Hewitson, B., <strong>Nkrumah, F.</strong>, Quagraine, K. T., &amp; Egbebiyi, T. S. <strong>(2024)</strong>.
-        <span class="papertitle">A Simple Subtropical High-Pressure System Index over the South Atlantic</span>.
-        <em>Atmospheric Science Letters</em>.
-        <br>
-        <a href="https://doi.org/10.1002/asl.1266">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Klutse, N. A. B., Abiodun, B. J., Quagraine, K. A., <strong>Nkrumah, F.</strong>, Abatan, A., Adekoke, J., Sylla, M. B., Berkoh-Oforiwaa, R., Koffi, H. A., Essien, P. <strong>(2024)</strong>.
-        <span class="papertitle">Projected changes in rainfall extremes over West African Cities under specific global warming levels using CORDEX and NEX-GDDP datasets</span>.
-        <em>Earth Systems and Environment</em>.
-        <br>
-        <a href="https://doi.org/10.1007/s41748-024-00425-w">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        <strong>Nkrumah, F.</strong>, Klein, C., Quagraine, K. A., Berkoh-Oforiwaa, R., Klutse, N. A. B., Essien, P., Quenum, G. M. L. D., Koffi, H. A. <strong>(2023)</strong>.
-        <span class="papertitle">Classification of Large-Scale Environments that drive the formation of Mesoscale Convective Systems over Southern West Africa</span>.
-        <em>Weather and Climate Dynamics, 4(3), 773&ndash;788</em>.
-        <br>
-        <a href="https://doi.org/10.5194/wcd-4-773-2023">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Essien, P., Figueiredo, C. A. O. B., Takahashi, H., Klutse, N. A. B., Wrasse, C. M., Afonso, J. M. D. S., &hellip; <strong>Nkrumah, F.</strong> and Quagraine, K. A. <strong>(2022)</strong>.
-        <span class="papertitle">Intertropical Convergence Zone as the Possible Source Mechanism for Southward Propagating Medium-Scale Traveling Ionospheric Disturbances over South American Low-Latitude and Equatorial Region</span>.
-        <em>Atmosphere, 13(11), 1836</em>.
-        <br>
-        <a href="https://doi.org/10.3390/atmos13111836">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        <strong>Nkrumah, F.</strong>, Quagraine, K. A., Quagraine, K. T., Wainwright, C., Quenum, G. M. L. D., Amankwah, A. &amp; Klutse, N. A. B. <strong>(2022)</strong>.
-        <span class="papertitle">Performance of CMIP6 HighResMIP on the Representation of Onset and Cessation of Seasonal Rainfall in Southern West Africa</span>.
-        <em>Atmosphere, 13(7), 999</em>.
-        <br>
-        <a href="https://doi.org/10.3390/atmos13070999">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Braimah, M., Asante, V. A., Ahiataku, M. A., Ansah, S. O., Otu-Larbi, F., Yahaya, B., <strong>Nkrumah, F.</strong> <strong>(2022)</strong>.
-        <span class="papertitle">Variability of the minor season rainfall over southern Ghana (1981&ndash;2018)</span>.
-        <em>Advances in Meteorology, 2022</em>.
-        <br>
-        <a href="https://doi.org/10.1155/2022/1861130">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quenum, G. M. L. D., <strong>Nkrumah, F.</strong>, Klutse, N. A. B., Sylla, M. B. <strong>(2021)</strong>.
-        <span class="papertitle">Spatiotemporal Changes in Temperature and Precipitation in West Africa. Part I: Analysis with the CMIP6 Historical Dataset</span>.
-        <em>Water, 13(24), 3506</em>.
-        <br>
-        <a href="https://doi.org/10.3390/w13243506">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Klutse, N. A. B., Owusu, K., <strong>Nkrumah, F.</strong>, Anang, O. A. <strong>(2021)</strong>.
-        <span class="papertitle">Projected rainfall changes and their implications for rainfed agriculture in northern Ghana</span>.
-        <em>Weather</em>.
-        <br>
-        <a href="https://doi.org/10.1002/wea.4015">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Klutse, N. A. B., Quagraine, K. A., <strong>Nkrumah, F.</strong>, Quagraine, K. T., Berkoh-Oforiwaa, R., Dzrobi, J. F., Sylla, M. B. <strong>(2021)</strong>.
-        <span class="papertitle">The Climatic Analysis of Summer Monsoon Extreme Precipitation Events over West Africa in CMIP6 Simulations</span>.
-        <em>Earth Systems and Environment, 5(1), 25&ndash;41</em>.
-        <br>
-        <a href="https://doi.org/10.1007/s41748-021-00203-y">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Klein, C., <strong>Nkrumah, F.</strong>, Taylor, C. M., Adefisan, E. A. <strong>(2021)</strong>.
-        <span class="papertitle">Seasonality and Trends of Drivers of Mesoscale Convective Systems in Southern West Africa</span>.
-        <em>Journal of Climate, 34(1), 71&ndash;87</em>.
-        <br>
-        <a href="https://doi.org/10.1175/JCLI-D-20-0194.1">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quagraine, K. A., <strong>Nkrumah, F.</strong>, Klein, C., Klutse, N. A. B., Quagraine, K. T. <strong>(2020)</strong>.
-        <span class="papertitle">West African summer monsoon precipitation variability as represented by reanalysis datasets</span>.
-        <em>Climate, 8(10), 111</em>.
-        <br>
-        <a href="https://doi.org/10.3390/cli8100111">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Dunn, R. J., Alexander, L. V., Donat, M. G., Zhang, X., Bador, M., Herold, N., &hellip; <strong>Nkrumah, F.</strong>, &hellip; Bin Hj Yussof, M. N. A. <strong>(2020)</strong>.
-        <span class="papertitle">Development of an updated global land in situ based data set of temperature and precipitation extremes: HadEX3</span>.
-        <em>Journal of Geophysical Research: Atmospheres, 125(16), e2019JD032263</em>.
-        <br>
-        <a href="https://doi.org/10.1029/2019JD032263">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        <strong>Nkrumah, F.</strong>, Vischel, T., Panthou, G., Klutse, N. A. B., Adukpo, D. C., Diedhiou, A. <strong>(2019)</strong>.
-        <span class="papertitle">Recent Trends in the Daily Rainfall Regime in Southern West Africa</span>.
-        <em>Atmosphere, 10(12), 741</em>.
-        <br>
-        <a href="https://doi.org/10.3390/atmos10120741">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Klutse, N. A. B., Ajayi, V. O., Gbobaniyi, E. O., Egbebiyi, T. S., Kouadio, K., <strong>Nkrumah, F.</strong>, Quagraine, K. A., Olusegun, C., Diasso, U., Abiodun, B. J., Lawal, K., Nikulin, G., Lennard, C. &amp; Dosio, A. <strong>(2018)</strong>.
-        <span class="papertitle">Potential impact of 1.5&deg;C and 2&deg;C global warming on consecutive dry and wet days over West Africa</span>.
-        <em>Environmental Research Letters, 13(5), 055013</em>.
-        <br>
-        <a href="https://doi.org/10.1088/1748-9326/aab37b">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Quagraine, K. A., Klutse, N. A. B., <strong>Nkrumah, F.</strong>, Adukpo, D. C., &amp; Owusu, K. <strong>(2017)</strong>.
-        <span class="papertitle">Changes in rainfall characteristics in Wenchi and Saltpond farming areas of Ghana</span>.
-        <em>International Journal of Geosciences, 8, 305&ndash;317</em>.
-        <br>
-        <a href="https://doi.org/10.4236/ijg.2017.83015">Access Paper here</a>
-      </td>
-    </tr>
-    <tr bgcolor="#ffffd0">
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        <strong>Nkrumah, F.</strong>, Klutse, N. A. B., Adukpo, D. C., Owusu, K., &amp; Quagraine, K. A. <strong>(2014)</strong>.
-        <span class="papertitle">Rainfall variability over Ghana: model versus rain gauge observation</span>.
-        <em>International Journal of Geosciences, 5, 673&ndash;683</em>.
-        <br>
-        <a href="https://doi.org/10.4236/ijg.2014.57060">Access Paper here</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:8px;width:100%;vertical-align:middle">
-        Klutse, N. A. B., Owusu, K., Adukpo, D. C., <strong>Nkrumah, F.</strong>, &amp; Quagraine, K. <strong>(2013)</strong>.
-        <span class="papertitle">Farmer&rsquo;s observation on climate change impacts on maize (Zea mays) production in a selected agro ecological Zone in Ghana</span>.
-        <em>Research Journal of Agriculture and Environmental Management, 2, 394&ndash;402</em>.
-        <br>
-        <a href="https://www.researchgate.net/publication/259361844_Farmer%27s_observation_on_climate_change_impacts_on_maize_Zea_mays_production_in_a_selected_agro-ecological_zone_in_Ghana">Access Paper here</a>
-      </td>
-    </tr>
-          </tbody></table>
+    <header>
+      <div class="top">
+        <div>
+          <h1>Francis Nkrumah</h1>
+          <p class="role">Climate scientist and Senior Lecturer, Department of Physics, University of Cape Coast, Ghana<br>
+          Review Editor, IPCC Seventh Assessment Report, Working Group I</p>
+        </div>
+        <img class="photo" src="images/FrancisN.jpg" alt="Portrait of Francis Nkrumah">
+      </div>
 
-          <br>
+      <figure class="rain" style="margin-left:0;margin-right:0">
+        <svg viewBox="0 0 720 124" role="img" aria-labelledby="rainT">
+          <title id="rainT">Schematic of the two rainy seasons on the Ghanaian coast, peaking in May to June and again in October</title>
+          <line x1="0" y1="100.5" x2="720" y2="100.5" class="base"/>
+          <g class="bars"><rect x="10.8" y="92.8" width="38.4" height="7.2" rx="3"/><text x="30.0" y="118" text-anchor="middle">J</text><rect x="70.8" y="87.4" width="38.4" height="12.6" rx="3"/><text x="90.0" y="118" text-anchor="middle">F</text><rect x="130.8" y="71.2" width="38.4" height="28.8" rx="3"/><text x="150.0" y="118" text-anchor="middle">M</text><rect x="190.8" y="56.8" width="38.4" height="43.2" rx="3"/><text x="210.0" y="118" text-anchor="middle">A</text><rect x="250.8" y="28.0" width="38.4" height="72.0" rx="3"/><text x="270.0" y="118" text-anchor="middle">M</text><rect x="310.8" y="10.0" width="38.4" height="90.0" rx="3"/><text x="330.0" y="118" text-anchor="middle">J</text><rect x="370.8" y="69.4" width="38.4" height="30.6" rx="3"/><text x="390.0" y="118" text-anchor="middle">J</text><rect x="430.8" y="89.2" width="38.4" height="10.8" rx="3"/><text x="450.0" y="118" text-anchor="middle">A</text><rect x="490.8" y="80.2" width="38.4" height="19.8" rx="3"/><text x="510.0" y="118" text-anchor="middle">S</text><rect x="550.8" y="53.2" width="38.4" height="46.8" rx="3"/><text x="570.0" y="118" text-anchor="middle">O</text><rect x="610.8" y="74.8" width="38.4" height="25.2" rx="3"/><text x="630.0" y="118" text-anchor="middle">N</text><rect x="670.8" y="91.0" width="38.4" height="9.0" rx="3"/><text x="690.0" y="118" text-anchor="middle">D</text></g>
+        </svg>
+        <figcaption class="caption">The two rainy seasons of the Ghanaian coast, schematic. Much of my work asks how this rhythm is changing.</figcaption>
+      </figure>
 
-          <!-- ===================== Preprints ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:16px 16px 0 16px;width:100%;vertical-align:middle"><h2>Preprints</h2></td></tr>
-          </tbody></table>
+      <ul class="links">
+        <li><a href="mailto:francis.nkrumah@ucc.edu.gh">Email</a></li>
+        <li><a href="data/Curriculum_Vitae_Francis_N.pdf">CV (PDF)</a></li>
+        <li><a href="https://scholar.google.com/citations?user=s_o1fYoAAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0002-4723-8062">ORCID</a></li>
+        <li><a href="https://directory.ucc.edu.gh/p/francis-nkrumah">UCC profile</a></li>
+        <li><a href="https://www.linkedin.com/in/francis-nkrumah-phd-0457947b/">LinkedIn</a></li>
+        <li><a href="https://x.com/NkrumahFra">X / Twitter</a></li>
+      </ul>
+    </header>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:8px;width:100%;vertical-align:middle">
-                <span class="papertitle">High-latitude, low-altitude stratospheric aerosol injection reshapes West African monsoon rainfall and associated dynamics</span>.
-                <em>Research Square</em> preprint <strong>(2026)</strong>.
-                <br>
-                <a href="https://doi.org/10.21203/rs.3.rs-9315964/v1">Access Preprint here</a>
-              </td>
-            </tr>
-          </tbody></table>
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p class="lede">I study how rain falls over West Africa, and how it will change.</p>
+      <p>I am a climate scientist in the Department of Physics at the University of Cape Coast, where I coordinate the
+        Meteorology and Atmospheric Physics Programme. My research covers rainfall regimes and extremes, mesoscale convective
+        systems, the West African Monsoon under climate change, and the regional effects of proposed climate interventions
+        such as stratospheric aerosol injection.</p>
+      <p>I combine ground and space observations, from rain gauges and satellites to GNSS and lightning sensors, with
+        regional and global climate models. I host a GPS receiver station at UCC, contributed to the IPCC Sixth Assessment
+        Report, and now serve as a Review Editor for the Seventh.</p>
+    </section>
 
-          <br>
+    <section id="news" aria-labelledby="news-h">
+      <h2 id="news-h">Recent</h2>
+      <ol class="tl" reversed>
+        <li><time>Aug 2026</time><span>New paper in <i>Atmospheric Science Letters</i>: an index for the South Indian Ocean high-pressure system.</span></li>
+        <li><time>Jun 2026</time><span>Gordon Research Conference on Climate Engineering, Newry, Maine, USA.</span></li>
+        <li><time>2026</time><span>ACIRH workshop and stakeholder dialogue on climate intervention, Accra.</span></li>
+        <li><time>2025</time><span>Appointed Review Editor, IPCC AR7 Working Group I.</span></li>
+        <li><time>2025</time><span>EW4Energy launches, bringing Ghana its first ground-based lightning detection network.</span></li>
+        <li><time>May 2025</time><span>Degrees Global Forum on Climate Intervention, Cape Town.</span></li>
+      </ol>
+    </section>
 
-          <!-- ===================== Miscellaneous ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr><td style="padding:16px 16px 0 16px;width:100%;vertical-align:middle"><h2>Miscellaneous</h2></td></tr>
-          </tbody></table>
+    <section id="projects" aria-labelledby="proj-h">
+      <h2 id="proj-h">Projects and roles</h2>
+      <div class="proj lead">
+        <h3>EW4Energy<span class="when">2025 to present</span></h3>
+        <p>Storm and lightning early warning for Ghana&rsquo;s energy sector. Funded through the Africa&ndash;UK Physics
+          Partnership (STFC and the Institute of Physics), with the University of Leeds, UKCEH, KNUST, UCC and the Ghana
+          Meteorological Agency.</p>
+      </div>
+      <div class="proj">
+        <h3>Degrees Modelling Fund<span class="when">2022 to present</span></h3>
+        <p>Regional climate impacts of stratospheric aerosol injection over West Africa, with The Degrees Initiative.</p>
+      </div>
+      <div class="proj">
+        <h3>CORDEX-Africa<span class="when">2018 to present</span></h3>
+        <p>Regional climate downscaling for Africa within the Coordinated Regional Climate Downscaling Experiment.</p>
+      </div>
+      <div class="proj">
+        <h3>GPS receiver station</h3>
+        <p>Host of a GPS receiver at the Department of Physics, University of Cape Coast.</p>
+      </div>
+      <div class="proj">
+        <h3>IPCC</h3>
+        <p>Review Editor, AR7 Working Group I (2025 to present). Contributing Author, AR6 Working Group I.</p>
+      </div>
+      <div class="proj">
+        <h3>African Climate Intervention Research Hub</h3>
+        <p>Member of a network of African researchers informing policy discussion on climate intervention.</p>
+      </div>
+    </section>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-                <div class="colored-box" style="background-color: #c6b89e;"><h2>Teaching</h2></div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                - Tropical Meteorology<br>
-                - Atmospheric Thermodynamics<br>
-                - Computer Applications in Meteorology<br>
-                - Atmospheric Electricity<br>
-                - Applications of Physics in Meteorology<br>
-                - Mesoscale Weather Systems
-              </td>
-            </tr>
+    <section id="publications" aria-labelledby="pub-h">
+      <div class="pubhead">
+        <h2 id="pub-h">Publications</h2>
+        <span class="count" id="count">24 peer-reviewed articles</span>
+      </div>
+      <div class="toggle" role="group" aria-label="Filter publications">
+        <button type="button" aria-pressed="true" data-f="all">All papers</button>
+        <button type="button" aria-pressed="false" data-f="first">First-author</button>
+      </div>
+      <div id="publist">
+      <div class="yr">
+        <h3>2026</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1002/asl2.70056">An Index to Characterize the South Indian Ocean High-Pressure System and Its Variability</a>
+            <span class="au">Quagraine, K. A., Quagraine, K. T., <b class="me">Nkrumah, F.</b>, Tilmes, S., Hewitson, B., Tadross, M., Klutse, N. A. B.</span>
+            <span class="jr"><i>Atmospheric Science Letters</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1080/19376812.2025.2611302">Comprehensive analysis of extreme wave events along the West African Coast: a study using WAVERYS data and the peak-over-threshold method</a>
+            <span class="au">Owusu, Y., Angnuureng, B. D., Kpogo-Nuwoklo, K. A., Twum, A., <b class="me">Nkrumah, F.</b>, Nwanosike, B.</span>
+            <span class="jr"><i>African Geographical Review</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2025</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1029/2025JD043576">Assessing the Response of Surface Cloud Radiative Effects to Stratospheric Aerosol Injections over West and Central Africa</a>
+            <span class="au">Dommo, A., <b class="me">Nkrumah, F.</b>, Quagraine, K. A., Klutse, N. A. B., Quenum, G. M. L. D., Koffi, H. A.</span>
+            <span class="jr"><i>Journal of Geophysical Research: Atmospheres</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1088/2752-5295/adee3c">Assessing the impact of stratospheric aerosol injection on precipitation extremes in Africa using the ARISE-SAI-1.5 dataset</a>
+            <span class="au">Quagraine, K. A., Tye, M. R., Quagraine, K. T., Tilmes, S., Simpson, I. R., <b class="me">Nkrumah, F.</b>, Egbebiyi, T. S., Odoulami, R. C., Klutse, N. A. B.</span>
+            <span class="jr"><i>Environmental Research: Climate, 4(3), 035006</i></span>
+          </li>
+          <li class="pub first">
+            <a class="pt" href="https://doi.org/10.1029/2024JD043117">Assessing Regional Climate Trends in West Africa Under Geoengineering: A Multi-model Comparison of UKESM1 and CESM2</a>
+            <span class="au"><b class="me">Nkrumah, F.</b>, Quagraine, K. A., Quenum, G. M. L. D., Visioni, D., Koffi, H. A., Klutse, N. A. B.</span>
+            <span class="jr"><i>Journal of Geophysical Research: Atmospheres, 130(13), e2024JD043117</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1002/joc.70031">Assessing the Impact of the South Indian Ocean High-Pressure System Using a Novel Index</a>
+            <span class="au">Quagraine, K. T., Quagraine, K. A., <b class="me">Nkrumah, F.</b>, Egbebiyi, T. S., Klutse, N. A. B.</span>
+            <span class="jr"><i>International Journal of Climatology, 45(12), e70031</i></span>
+          </li>
+          <li class="pub first">
+            <a class="pt" href="https://doi.org/10.1088/2752-5295/adaa0c">Climate Response to Stratospheric Aerosol Injection During the Harmattan Season in West Africa</a>
+            <span class="au"><b class="me">Nkrumah, F.</b>, Quenum, G. M. L. D., Quagraine, K. A., Tilmes, S., Klutse, N. A. B., Dommo, A., Koffi, H. A., Essien, P. &amp; Bediako, R.</span>
+            <span class="jr"><i>Environmental Research: Climate, 4(1), 015005</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2024</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1002/asl.1266">A Simple Subtropical High-Pressure System Index over the South Atlantic</a>
+            <span class="au">Quagraine, K. A., Hewitson, B., <b class="me">Nkrumah, F.</b>, Quagraine, K. T., &amp; Egbebiyi, T. S.</span>
+            <span class="jr"><i>Atmospheric Science Letters</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1007/s41748-024-00425-w">Projected changes in rainfall extremes over West African Cities under specific global warming levels using CORDEX and NEX-GDDP datasets</a>
+            <span class="au">Klutse, N. A. B., Abiodun, B. J., Quagraine, K. A., <b class="me">Nkrumah, F.</b>, Abatan, A., Adekoke, J., Sylla, M. B., Berkoh-Oforiwaa, R., Koffi, H. A., Essien, P.</span>
+            <span class="jr"><i>Earth Systems and Environment</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2023</h3>
+        <ul>
+          <li class="pub first">
+            <a class="pt" href="https://doi.org/10.5194/wcd-4-773-2023">Classification of Large-Scale Environments that drive the formation of Mesoscale Convective Systems over Southern West Africa</a>
+            <span class="au"><b class="me">Nkrumah, F.</b>, Klein, C., Quagraine, K. A., Berkoh-Oforiwaa, R., Klutse, N. A. B., Essien, P., Quenum, G. M. L. D., Koffi, H. A.</span>
+            <span class="jr"><i>Weather and Climate Dynamics, 4(3), 773&ndash;788</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2022</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.3390/atmos13111836">Intertropical Convergence Zone as the Possible Source Mechanism for Southward Propagating Medium-Scale Traveling Ionospheric Disturbances over South American Low-Latitude and Equatorial Region</a>
+            <span class="au">Essien, P., Figueiredo, C. A. O. B., Takahashi, H., Klutse, N. A. B., Wrasse, C. M., Afonso, J. M. D. S., &hellip; <b class="me">Nkrumah, F.</b> and Quagraine, K. A.</span>
+            <span class="jr"><i>Atmosphere, 13(11), 1836</i></span>
+          </li>
+          <li class="pub first">
+            <a class="pt" href="https://doi.org/10.3390/atmos13070999">Performance of CMIP6 HighResMIP on the Representation of Onset and Cessation of Seasonal Rainfall in Southern West Africa</a>
+            <span class="au"><b class="me">Nkrumah, F.</b>, Quagraine, K. A., Quagraine, K. T., Wainwright, C., Quenum, G. M. L. D., Amankwah, A. &amp; Klutse, N. A. B.</span>
+            <span class="jr"><i>Atmosphere, 13(7), 999</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1155/2022/1861130">Variability of the minor season rainfall over southern Ghana (1981&ndash;2018)</a>
+            <span class="au">Braimah, M., Asante, V. A., Ahiataku, M. A., Ansah, S. O., Otu-Larbi, F., Yahaya, B., <b class="me">Nkrumah, F.</b></span>
+            <span class="jr"><i>Advances in Meteorology, 2022</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2021</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.3390/w13243506">Spatiotemporal Changes in Temperature and Precipitation in West Africa. Part I: Analysis with the CMIP6 Historical Dataset</a>
+            <span class="au">Quenum, G. M. L. D., <b class="me">Nkrumah, F.</b>, Klutse, N. A. B., Sylla, M. B.</span>
+            <span class="jr"><i>Water, 13(24), 3506</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1002/wea.4015">Projected rainfall changes and their implications for rainfed agriculture in northern Ghana</a>
+            <span class="au">Klutse, N. A. B., Owusu, K., <b class="me">Nkrumah, F.</b>, Anang, O. A.</span>
+            <span class="jr"><i>Weather</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1007/s41748-021-00203-y">The Climatic Analysis of Summer Monsoon Extreme Precipitation Events over West Africa in CMIP6 Simulations</a>
+            <span class="au">Klutse, N. A. B., Quagraine, K. A., <b class="me">Nkrumah, F.</b>, Quagraine, K. T., Berkoh-Oforiwaa, R., Dzrobi, J. F., Sylla, M. B.</span>
+            <span class="jr"><i>Earth Systems and Environment, 5(1), 25&ndash;41</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1175/JCLI-D-20-0194.1">Seasonality and Trends of Drivers of Mesoscale Convective Systems in Southern West Africa</a>
+            <span class="au">Klein, C., <b class="me">Nkrumah, F.</b>, Taylor, C. M., Adefisan, E. A.</span>
+            <span class="jr"><i>Journal of Climate, 34(1), 71&ndash;87</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2020</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.3390/cli8100111">West African summer monsoon precipitation variability as represented by reanalysis datasets</a>
+            <span class="au">Quagraine, K. A., <b class="me">Nkrumah, F.</b>, Klein, C., Klutse, N. A. B., Quagraine, K. T.</span>
+            <span class="jr"><i>Climate, 8(10), 111</i></span>
+          </li>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1029/2019JD032263">Development of an updated global land in situ based data set of temperature and precipitation extremes: HadEX3</a>
+            <span class="au">Dunn, R. J., Alexander, L. V., Donat, M. G., Zhang, X., Bador, M., Herold, N., &hellip; <b class="me">Nkrumah, F.</b>, &hellip; Bin Hj Yussof, M. N. A.</span>
+            <span class="jr"><i>Journal of Geophysical Research: Atmospheres, 125(16), e2019JD032263</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2019</h3>
+        <ul>
+          <li class="pub first">
+            <a class="pt" href="https://doi.org/10.3390/atmos10120741">Recent Trends in the Daily Rainfall Regime in Southern West Africa</a>
+            <span class="au"><b class="me">Nkrumah, F.</b>, Vischel, T., Panthou, G., Klutse, N. A. B., Adukpo, D. C., Diedhiou, A.</span>
+            <span class="jr"><i>Atmosphere, 10(12), 741</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2018</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.1088/1748-9326/aab37b">Potential impact of 1.5&deg;C and 2&deg;C global warming on consecutive dry and wet days over West Africa</a>
+            <span class="au">Klutse, N. A. B., Ajayi, V. O., Gbobaniyi, E. O., Egbebiyi, T. S., Kouadio, K., <b class="me">Nkrumah, F.</b>, Quagraine, K. A., Olusegun, C., Diasso, U., Abiodun, B. J., Lawal, K., Nikulin, G., Lennard, C. &amp; Dosio, A.</span>
+            <span class="jr"><i>Environmental Research Letters, 13(5), 055013</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2017</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://doi.org/10.4236/ijg.2017.83015">Changes in rainfall characteristics in Wenchi and Saltpond farming areas of Ghana</a>
+            <span class="au">Quagraine, K. A., Klutse, N. A. B., <b class="me">Nkrumah, F.</b>, Adukpo, D. C., &amp; Owusu, K.</span>
+            <span class="jr"><i>International Journal of Geosciences, 8, 305&ndash;317</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2014</h3>
+        <ul>
+          <li class="pub first">
+            <a class="pt" href="https://doi.org/10.4236/ijg.2014.57060">Rainfall variability over Ghana: model versus rain gauge observation</a>
+            <span class="au"><b class="me">Nkrumah, F.</b>, Klutse, N. A. B., Adukpo, D. C., Owusu, K., &amp; Quagraine, K. A.</span>
+            <span class="jr"><i>International Journal of Geosciences, 5, 673&ndash;683</i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="yr">
+        <h3>2013</h3>
+        <ul>
+          <li class="pub">
+            <a class="pt" href="https://www.researchgate.net/publication/259361844_Farmer%27s_observation_on_climate_change_impacts_on_maize_Zea_mays_production_in_a_selected_agro-ecological_zone_in_Ghana">Farmer&rsquo;s observation on climate change impacts on maize (Zea mays) production in a selected agro ecological Zone in Ghana</a>
+            <span class="au">Klutse, N. A. B., Owusu, K., Adukpo, D. C., <b class="me">Nkrumah, F.</b>, &amp; Quagraine, K.</span>
+            <span class="jr"><i>Research Journal of Agriculture and Environmental Management, 2, 394&ndash;402</i></span>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <h3 style="font-size:1.2rem;font-weight:600;margin:1.6rem 0 .4rem">Preprint</h3>
+      <p><a href="https://doi.org/10.21203/rs.3.rs-9315964/v1">High-latitude, low-altitude stratospheric aerosol injection reshapes West African monsoon rainfall and associated dynamics</a>.
+        <span class="note"><i>Research Square</i>, 2026.</span></p>
+    </section>
 
-          </tbody></table>
+    <section id="teaching" aria-labelledby="teach-h">
+      <h2 id="teach-h">Teaching</h2>
+      <p>Courses I teach at the University of Cape Coast:</p>
+      <ul class="cols">
+        <li>Tropical Meteorology</li>
+        <li>Atmospheric Thermodynamics</li>
+        <li>Mesoscale Weather Systems</li>
+        <li>Atmospheric Electricity</li>
+        <li>Computer Applications in Meteorology</li>
+        <li>Applications of Physics in Meteorology</li>
+      </ul>
+    </section>
 
-          <!-- ===================== Footer ===================== -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Website template adapted from <a style="font-size:small;" href="https://jonbarron.info/">Jon Barron</a>.
-                  Last updated: October 2026.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
+    <footer>
+      Department of Physics, University of Cape Coast, Cape Coast, Ghana.
+      Last updated October 2026.
+    </footer>
+  </div>
 
-        </td>
-      </tr>
-    </tbody></table>
-  </body>
+  <script>
+    (function () {
+      var list = document.getElementById('publist');
+      var count = document.getElementById('count');
+      var btns = document.querySelectorAll('.toggle button');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          var first = b.dataset.f === 'first';
+          list.classList.toggle('onlyfirst', first);
+          count.textContent = first ? '6 first-author articles' : '24 peer-reviewed articles';
+        });
+      });
+      // Hide the portrait gracefully if the image is missing
+      var img = document.querySelector('.photo');
+      function hide(){ img.style.visibility = 'hidden'; }
+      if (img.complete && img.naturalWidth === 0) hide(); else img.addEventListener('error', hide);
+      // Stagger the rainfall bars once on load
+      document.querySelectorAll('.rain .bars rect').forEach(function (r, i) { r.style.animationDelay = (i * 55) + 'ms'; });
+    })();
+  </script>
+</body>
 </html>
